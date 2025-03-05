@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T&M IT Solutions</title>
+    <style>
+       body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #708090;
+        }
+        .nav-bar {
+            width: 100%;
+            background: linear-gradient(45deg, #333, #555);
+            color: white;
+            display: flex;
+            justify-content: center;
+            padding: 15px 0;
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+        }
+        .nav-bar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        .nav-bar li {
+            position: relative;
+        }
+        .nav-bar a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            margin: 0 5px;
+            display: inline-block;
+            transition: background-color 0.3s;
+        }
+        .nav-bar a:hover {
+            background-color: #777;
+        }
+        .nav-bar ul ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #333;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .nav-bar li:hover > ul {
+            display: block;
+        }
+        .nav-bar ul ul li a {
+            padding: 10px;
+            display: block;
+        }
+        .header {
+            text-align: center;
+            padding: 120px 20px 20px; /* Added extra padding-top to account for the fixed nav-bar */
+            background: linear-gradient(45deg, #708090, #ddd);
+        }
+        .header img {
+            width: 150px;
+            height: auto;
+            background-color: #708090;
+        }
+        .tagline {
+            color: white;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            font-size: 1.5em;
+            margin-top: 10px;
+        }
+        .section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .section h2 {
+            margin-bottom: 20px;
+        }
+        .services, .about, .contact {
+            background-color: white;
+            margin: 20px auto;
+            width: 80%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            padding: 20px;
+        }
+        .services ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .services li {
+            padding: 10px 20px;
+            border-right: 1px solid #ddd;
+        }
+        .services li:last-child {
+            border-right: none;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+        .footer a {
+            color: white;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .contact-link {
+            display: block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .contact-link:hover {
+            background-color: #0056b3;
+        }
+        .slider {
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+            position: relative;
+            margin-top: 20px;
+        }
+        .slides {
+            display: flex;
+            transition: transform 1s ease-in-out;
+            width: 100%;
+        }
+        .slides img {
+            width: 100%;
+            height: auto;
+            flex: 0 0 100%;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            background-color: white;
+            padding: 40px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .container h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        label {
+            font-weight: bold;
+            color: #333;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+            font-size: 1em;
+        }
+        button[type="submit"] {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s;
+        }
+        button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-bar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+<div class="header">
+        <img src="C:\Users\TMA20\OneDrive\Documents\GitHub\Master\TMITS-HOME\New Logo TMITSOLUTIONS.jpg" alt="New Logo TMITSOLUTIONS">
+        <div class="tagline">T&M IT Solutions - Innovating Your Digital Future</div>
+    </div>
+    <div class="container">
+        <h1>Contact Us</h1>
+        <form action="mailto:tmitsolutions@yahoo.com" method="post" enctype="text/plain">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+            
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2025 T&M IT Solutions. All Rights Reserved.</p>
+    </div>
+</body>
+</html>
